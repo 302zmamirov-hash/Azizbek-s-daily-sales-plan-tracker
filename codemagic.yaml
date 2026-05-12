@@ -1,0 +1,12 @@
+workflows:
+  android-workflow:
+    name: Android Workflow
+    environment:
+      flutter: stable
+
+    scripts:
+      - flutter pub get
+      - flutter build apk --debug
+
+    artifacts:
+      - build/app/outputs/flutter-apk/*.apk
