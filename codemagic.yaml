@@ -6,6 +6,7 @@ workflows:
 
     scripts:
       - flutter pub get
+      - flutter pub run flutter_launcher_icons
       - flutter build apk --debug
 
     artifacts:
